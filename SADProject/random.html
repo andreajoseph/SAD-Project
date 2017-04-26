@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<title>Insert data into database</title>
+	</head>
+	<body>
+	<?php
+
+	// Connect to database server
+	mysql_connect("mysql.myhost.com", "user", "sesame") or die (mysql_error ());
+
+	// Select database
+	mysql_select_db("mydatabase") or die(mysql_error());
+
+	// The SQL statement is built
+
+	$strSQL = "INSERT INTO people(";
+
+	$strSQL = $strSQL . "FirstName, ";
+	$strSQL = $strSQL . "LastName, ";
+
+	$strSQL = $strSQL . "Phone, ";
+	$strSQL = $strSQL . "BirthDate) ";
+
+	$strSQL = $strSQL . "VALUES(";
+
+	$strSQL = $strSQL . "'Gus', ";
+
+	$strSQL = $strSQL . "'Goose', ";
+	$strSQL = $strSQL . "'99887766', ";
+
+	$strSQL = $strSQL . "'1964-04-20')";
+
+	// The SQL statement is executed 
+	mysql_query($strSQL) or die (mysql_error());
+
+	// Close the database connection
+	mysql_close();
+	?>
+
+	<h1>The database is updated!</h1>
+	</body>
+	</html>
+	
