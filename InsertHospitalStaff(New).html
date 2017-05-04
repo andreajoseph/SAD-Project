@@ -1,0 +1,72 @@
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<form action="insert(staff).php" method="POST">
+<style>
+body{
+    background color:"orange";
+    }
+.wrapper{
+        text-align: center;
+        }
+.button{
+        position: absolute;
+        top:50%;
+        } 
+
+.w3-btn {width:150px;}
+
+</style>
+</head>
+
+
+<h1 align="center">HOSPITAL MANAGEMENT APPLICATION</h1>
+<br>
+<h2 align="center">Welcome!</h2>
+<br>
+<h3 align="center">PLEASE ENTER APPROPRIATE DETAILS.</h3>
+<br>
+<body bgcolor="orange">
+<div class="container">
+<form action="display.php" method="POST">
+ 
+    <div class="form-group wrapper">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name.">
+    </div>
+    <div class="form-group wrapper">
+      <label for="id">ID:</label>
+      <input type="text" class="form-control" id="id" placeholder="Enter ID.">
+    </div>
+    <div class="form-group wrapper">
+      <label for="addr">Address:</label>
+      <input type="text" class="form-control" id="addr" placeholder="Enter Address.">
+    </div>
+    <div class="form-group wrapper">
+      <label for="cont">Contact No.:</label>
+      <input type="text" class="form-control" id="cont" placeholder="Enter ContactNo.">
+    </div>
+    <div class="form-group wrapper">
+      <label for="desg">Designation.:</label>
+      <input type="text" class="form-control" id="desg" placeholder="Enter Designation.">
+    </div>
+    <div class="form-group wrapper">
+      <label for="salary">Salary.:</label>
+      <input type="text" class="form-control" id="salary" placeholder="Enter Salary.">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox">Remember me.</label>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit.</button>
+
+
+</form>
+</div>
+
+</html>
