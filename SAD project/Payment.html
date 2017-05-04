@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+   .spanner
+    {
+    width:500px;
+    } 
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      }
+.carousel .item {
+  height: 550px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+  
+
+  /* Hide the carousel text when the screen is less than 300 pixels wide */
+  @media (max-width: 300px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  </style>
+</head>
+<body background="images2.jpg" >
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Page1FINAL.html">HMS APPLICATION.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Page1FINAL.html">Home</a></li>
+        <li><a href="WWD.html">What We Do.</a></li>
+        <li><a href="HWW.html">How We Work.</a></li>
+        <li><a href="About.html">About.</a></li>
+      </ul>
+</nav>
+<br>
+<br>
+<h1>Pay your Bills.</h1>
+<br>
+<h3>Please choose to pay a hospital or physician below. After your selection, enter the name of the physician consulted.
+Enter your account or invoice information, then click 'continue to secure patient portal' at the bottom of the page to be redirected to our processing page. There, you may input your credit card 
+information. You will receive an e-mail confirmation after completing your transaction. 
+Please allow two business days for updates to your account.</h3>
+
+<div class="container text-center">  
+  
+  <button type="button" class="btn btn-warning btn-lg"><a href="InsertHospitalPatient(New).html">To Enter New Patient Information.</a></button>
+  <button type="button" class="btn btn-warning btn-lg"><a href="UpdateHospitalPatient(New).html">To Enter Old Patient Information.</a></button>
+</div>
+<h2>Billing Information.</h2>
+<div class="container">
+    <label><b>Cardholder name: </b></label>
+    <input type="text"  name="cname" required>
+    
+    <h3>I would like to pay by:<td>
+<div class="container">
+    <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">MasterCard.
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Visa.
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Other.
+    </label>
+  </form>
+</div>
+
+    <label><b>Name: </b></label>
+    <input type="text" name="name" required>
+    <br><br>
+    <label><b>Billed: </b></label>
+    <input type="text" name="addr" required>
+    <br>
+    <br> 
+    <label><b>City:** </b></label>
+    <input type="text" required>
+    <br>
+    <br>
+    <label><b>State*: </b></label>
+    <input type="text" required>
+    <br>
+    <br>
+    <label><b>Phone:</b></label>
+    <input type="text" required>
+    <br>
+    <br>
+    <br>
+     <button type="button" class="btn btn-warning btn-lg"><a href="Payment2.html">Continue to secure payment portal.</a></button>
+  
+    <br>
+    <br>
+
+
+<br>    
+<br>    
+<br>
+<br>
+  </div>
+</div>
+</div>
+<footer>
+Join us @HMSApps.discussion.com
+</footer>
+
+</body>
+</html>
