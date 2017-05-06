@@ -72,39 +72,43 @@
 
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
+ 
     
     <div class="modal-content">
       <div class="modal-header">
+          <form action="login1.0.php" method="post">
       <div class="container">
+          
       <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control spanner" id="email" placeholder="Enter email">
+          
+      <label for="username">Username:</label>
+      <input type="text" class="form-control spanner" name="username" id="username" placeholder="Enter username">
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" class="form-control spanner" id="pwd" placeholder="Enter password">
+      <input type="password" class="form-control spanner" name="password" id="pwd" placeholder="Enter password">
     </div>
     <div class="checkbox">
       <label><input type="checkbox"> Remember me.</label>
     </div>
 
-  </form>
+          
 </div>
         
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Submit.</button>
+        <input type="submit" class="btn btn-danger" name="submit" value="Submit.">
       </div>
+              </form>
     </div>
-
+      </div>
   </div>
 </div>
       </ul>
     </div>
   </div>
 </nav>
-
+<div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -183,7 +187,7 @@
   </div>
 </div><br>
 
-</div>
+
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
